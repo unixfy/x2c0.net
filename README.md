@@ -1,2 +1,5 @@
-# x2c0.net
-Official GitHub repository for X2C0.net. Once changes are pushed, the server automatically pulls this repo and updates the site.
+# x2c0.net Git repository
+
+## What does this repo do?
+
+As changes are pushed to this repo, the server hosting x2c0.net automatically pulls the changes and updates the site.
