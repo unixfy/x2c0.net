@@ -208,7 +208,7 @@
 
     @media screen and (max-width: 991px) {
       .padbottom {
-        padding-bottom:10px;
+        padding-bottom: 10px;
       }
     }
 
@@ -238,6 +238,30 @@
       </div>
     </div>
   </div>
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u = "//analytics.x2c0.net/";
+      _paq.push(['setTrackerUrl', u + 'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document,
+        g = d.createElement('script'),
+        s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript';
+      g.async = true;
+      g.defer = true;
+      g.src = u + 'piwik.js';
+      s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <noscript><p><img src="//analytics.x2c0.net/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+
 </head>
 
 <body>
@@ -298,7 +322,7 @@
             <div class="row">
               <div class="col-lg-6 padbottom">
                 <a class="btn btn-indigo btn-md btn-block" href="https://proxy.x2c0.net" role="button" target="_blank"><i class="fa fa-link fa-fw" aria-hidden="true"></i> LowEndProxy</a>
-                  <a class="btn btn-indigo btn-md btn-block" href="https://www.duolingo.com/unixfy" role="button" target="_blank"><i class="fa fa-language fa-fw" aria-hidden="true"></i> Deutsche</a>
+                <a class="btn btn-indigo btn-md btn-block" href="https://www.duolingo.com/unixfy" role="button" target="_blank"><i class="fa fa-language fa-fw" aria-hidden="true"></i> Deutsche</a>
               </div>
               <div class="col-lg-6">
                 <a class="btn btn-indigo btn-md btn-block" href="https://documentation.x2c0.net/books/server-directory/page/server-directory" role="button" target="_blank"><i class="fa fa-object-group" aria-hidden="true"></i> CrystalCluster</a>
