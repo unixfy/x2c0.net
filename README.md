@@ -1,6 +1,8 @@
 # x2c0.net Git repository
 
-[![CircleCI](https://circleci.com/gh/unixfy/x2c0.net/tree/master.svg?style=svg)](https://circleci.com/gh/unixfy/x2c0.net/tree/master)
+**CircleCI Status**: [![CircleCI](https://circleci.com/gh/unixfy/x2c0.net/tree/master.svg?style=svg)](https://circleci.com/gh/unixfy/x2c0.net/tree/master)
+
+(if this icon is not green, then the hosted site is likely not up to date.)
 
 ## What does this repo do?
 
