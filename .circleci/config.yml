@@ -1,9 +1,21 @@
-
-dependencies:
-    override:
-        - sudo pip install awscli
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync /home/ubuntu/S3ContinuousDeploy s3://x2c0.net --delete
+version: 2
+jobs:
+    build:
+        docker:
+        - image: circleci/python:latest
+        steps:
+        - checkout
+        - store_artifacts:
+            path: /code/x2c0
+            destination: up
+        - run: 
+            name: Install AWSCLI
+            command: sudo pip install awscli
+        - deploy:
+             name: Deploy to Amazon Web Services S3
+             command: |
+             if [ "${CIRCLE_BRANCH}" == "master" ]; then
+               aws s3 sync /code/x2c0 s3://x2c0.net --delete
+             else
+               echo "Not master branch so not deploying"
+             fi
