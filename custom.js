@@ -7,13 +7,15 @@ $(document).ready(function(){
 $(window).on('load', function() {
   var typed = new Typed("#hello", {
     stringsElement: '#hellos',
-    typeSpeed: 75,
+    typeSpeed: 50,
     startDelay: 1000,
-    backSpeed: 75,
-    backDelay: 2000,
+    backSpeed: 50,
+    backDelay: 1000,
+    fadeOutDelay: 1250,
+    fadeOut: true,
     loop: true,
     loopCount: Infinity,
-    autoInsertCss: false,
+    autoInsertCss: true,
     smartBackspace: false,
   });
 });
