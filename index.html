@@ -24,11 +24,44 @@ if you want to watch me develop stuff...
 </head>
 
 <body>
+  <!-- Sidebar -->
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="aero.jpg">
+        </div>
+        <h5 class="white-text">x2c0.net</h5>
+      </div>
+    </li>
+    <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
+
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">NOC</a></li>
+    <li><a class="waves-effect waves-teal modal-trigger" href="#ip-alloc"><i class="material-icons">network_cell</i> IP Allocations</a></li>
+    <li><a class="waves-effect waves-teal modal-trigger" href="#abuse-contact-ripe"><i class="material-icons">warning</i> RIPE Abuse Contact</a></li>
+  </ul>
+
+  <!-- Navbar (mobile only) -->
+  <div class="navbar-fixed hide-on-large-only">
+    <nav>
+      <div class="nav-wrapper light-blue darken-1">
+        <a href="#!" class="brand-logo">disulfi.de.</a>
+        <ul class="left">
+          <li>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <!-- Materialize.css JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- PACE.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
   <!-- Custom JS -->
