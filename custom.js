@@ -6,7 +6,7 @@ $(document).ready(function() {
 // scrollspy
 $(document).ready(function() {
   $('.scrollspy').scrollSpy({
-    scrollOffset: 0
+    scrollOffset: 5
   });
 });
 
@@ -35,7 +35,7 @@ $(function() {
     interstitialSection: ".footer",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
-    offset: 0,
+    offset: 5,
     scrollbars: true,
     standardScrollElements: "",
     setHeights: true,
