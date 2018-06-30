@@ -1,10 +1,10 @@
 // sidenav
-$(document).ready(function(){
+$(document).ready(function() {
   $('.sidenav').sidenav();
 });
 
 // scrollspy
-$(document).ready(function(){
+$(document).ready(function() {
   $('.scrollspy').scrollSpy({
     scrollOffset: 0
   });
@@ -24,5 +24,27 @@ $(window).on('load', function() {
     loopCount: Infinity,
     autoInsertCss: true,
     smartBackspace: false,
+  });
+});
+
+// Scrolljacking!
+$(function() {
+  $.scrollify({
+    section: ".fullscreen",
+    sectionName: "name",
+    interstitialSection: ".footer",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset: 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll: true,
+    before: function() {},
+    after: function() {},
+    afterResize: function() {},
+    afterRender: function() {}
   });
 });
