@@ -3,6 +3,11 @@ $(document).ready(function(){
   $('.sidenav').sidenav();
 });
 
+// scrollspy
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+
 // TypedJS
 $(window).on('load', function() {
   var typed = new Typed("#hello", {

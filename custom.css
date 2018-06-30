@@ -99,3 +99,8 @@ img {
     opacity: 1;
   }
 }
+
+/* scrollspy */
+a.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
