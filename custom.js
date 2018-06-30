@@ -5,7 +5,9 @@ $(document).ready(function(){
 
 // scrollspy
 $(document).ready(function(){
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy({
+    scrollOffset: 0
+  });
 });
 
 // TypedJS
