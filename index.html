@@ -1,149 +1,55 @@
-<!--
-I've uploaded my development workflow here: https://youtu.be/dQw4w9WgXcQ
-if you want to watch me develop stuff...
--->
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <title>x2c0.net</title>
-  <!-- Favicons? nope -->
-  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	<title>x2c0.net shutdown</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Materialize.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="custom.css">
-  <!-- PACE.js Theme -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-flash.min.css">
 
-  <!-- We're mobile friendly.. right? ;) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Font -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+
+
+	<link href="css/ionicons.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/jquery.classycountdown.css" />
+
+	<link href="css/styles.css" rel="stylesheet">
+
+	<link href="css/responsive.css" rel="stylesheet">
+
 </head>
-
 <body>
-  <!-- Sidebar -->
-  <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li>
-      <div class="user-view">
-        <div class="background">
-          <img src="aero.jpg">
-        </div>
-        <h5 class="white-text">x2c0.net</h5>
-      </div>
-    </li>
-    <li><a class="waves-effect waves-teal" href="#home-section"><i class="material-icons">home</i> Home</a></li>
-    <li><a class="waves-effect waves-teal" href="#apps-section"><i class="material-icons">apps</i> Apps</a></li>
-    <li><a class="waves-effect waves-teal" href="#about-section"><i class="material-icons">info</i> About</a></li>
-    <li><a class="waves-effect waves-teal" href="#footer-section"><i class="material-icons">copyright</i> Footer</a></li>
-    <li>
-      <div class="divider"></div>
-    </li>
-    <li><a class="subheader">Support</a></li>
-    <li><a class="waves-effect waves-teal" href="mailto:admin@unixfy.me?subject=Email from X2C0.net&body=Please type your query here. Do not edit the subject."><i class="material-icons">email</i> Email</a></li>
-  </ul>
 
-  <!-- Navbar (mobile only) -->
-  <div class="navbar-fixed hide-on-large-only">
-    <nav>
-      <div class="nav-wrapper light-blue darken-1">
-        <a href="#!" class="brand-logo">x2c0.net</a>
-        <ul class="left">
-          <li>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+	<div class="main-area center-text" style="background-image:url(images/bg.jpg);" >
 
-  <!-- Home -->
-  <div id="home-section" class="home scrollspy section fullscreen" data-name="home">
-    <div class="section no-pad-bot">
-      <h1 class="header center-align orange-text text-lighten-2"><span id="hello"></span></h1>
-      <div class="row center">
-        <h5 class="header col s12 white-text">Welcome to X2C0.net!</h5>
-      </div>
-    </div>
-    <video autoplay loop class="video-background" muted plays-inline poster="UN_building.jpg">
-<source src="UN_building.mp4" type="video/mp4" /><source src="UN_building.webm" type="video/webm" />
-</video>
-  </div>
+		<div class="display-table">
+			<div class="display-table-cell">
 
-  <!-- Apps -->
-  <div id="apps-section" class="apps scrollspy section fullscreen" data-name="apps">
-    <h3 class="header center-align white-text apps-text">X2C0 Web Apps</h3>
-    <div class="row">
-      <div class="col s12 m10 offset-m1">
-        <div class="card-panel teal">
-          <span class="white-text">Card to be filled with buttons with links to apps...
-      </span>
-        </div>
-      </div>
-    </div>
-  </div>
+				<h1 class="title"><b>x2c0.net is shutting down.</b></h1>
+				<p class="desc font-white">effective 13th october, 2019, x2c0.net will be ceasing its operations. resources hosted at this domain will be relocated to <a href="https://unixfy.me">unixfy.me</a>.</p>
+				<br />
+				<div id="normal-countdown" data-date="2019/10/13"></div>
 
-  <!-- Footer -->
-  <div id="footer-section" class="footer scrollspy section">
-    <footer class="page-footer">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="row">
-          <div class="col s12">
-            &copy; 2016-2018 X2C0.net. Coded with love by Unixfy
-          </div>
-        </div>
-    </footer>
-    </div>
+				<ul class="social-btn">
+					<li class="list-heading">&copy; 2019 x2c0.net</li>
+				</ul>
 
-    <!-- typedjs strings -->
-    <div id="hellos">
-      <h1>Hello!</h1>
-      <h1>N&#237; Hao!</h1>
-      <h1>Hola!</h1>
-      <h1>Namast&#233;!</h1>
-      <h1>Ahlan bik!</h1>
-      <h1>Ol&#225;!</h1>
-      <h1>Nomoskar!</h1>
-      <h1>Priv&#233;t!</h1>
-      <h1>K&#243;nnichi wa!</h1>
-      <h1>Guten Tag!</h1>
-      <h1>Selamat Petang!</h1>
-      <h1>Ch&#224;o!</h1>
-      <h1>Annyeonghaseyo!</h1>
-      <h1>Bonjour!</h1>
-      <h1>Merhaba!</h1>
-      <h1>Buongiorno!</h1>
-    </div>
+			</div><!-- display-table -->
+		</div><!-- display-table-cell -->
+	</div><!-- main-area -->
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <!-- Materialize.css JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- PACE.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-    <!-- TypedJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
-    <!-- Scrolljack JS -->
-    <script src="scrolljack.min.js"></script>
-    <!-- Custom JS -->
-    <script src="custom.js"></script>
+
+	<!-- SCIPTS -->
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+	<script src="js/jquery.countdown.min.js"></script>
+
+	<script src="js/scripts.js"></script>
+
 </body>
-
 </html>
